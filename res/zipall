@@ -1,0 +1,22 @@
+for f in $(ls)
+do
+cd $f
+for i in $(ls -d */)
+do
+cd $i
+for j in $(ls -d */)
+do
+  cd $j
+  mv *.png icon.png
+  mv *.svg icon.svg
+  cd ..
+done
+cd ..
+#  filename=$(basename "$i")
+#  filename="${filename%.*}"
+#  echo $filename
+#  unzip $i
+#  mv icon* $filename
+done
+cd ..
+done

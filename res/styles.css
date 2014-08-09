@@ -1,0 +1,39 @@
+body {
+  background-color: #2B803E;
+  color: #93C39D;
+  font-family: "futura";
+}
+
+a {
+  color: #93C39D;
+}
+
+.center {
+  margin-left:auto;
+  margin-right:auto;
+  width: 80%;
+  text-align: center;
+}
+
+#welcome {
+  font-size: 100px;
+}
+
+#getstarted {
+  font-size: 50px;
+}
+
+#number {
+  font-size: 40px;
+  vertical-align: bottom;
+  margin-top:30px;
+}
+
+#numberfield {
+  height: 50px;
+  width: 300px;
+}
+
+#submit{
+  height: 50px;
+}

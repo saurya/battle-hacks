@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>
+Penpal
+</title>
+<link rel="stylesheet" type="text/css" href="/res/styles.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+var sendNumber = function() {
+  var xhr = new XMLHttpRequest();
+  xhr.open("POST", "/initialize");
+  xhr.setRequestHeader('Content-Type', 'application/json');
+  xhr.send(JSON.stringify({
+    number: $("#numberfield").val(),
+  }));
+}
+</script>
+
+</head>
+<body>
+<div id="centercol" class="center">
+<div id="welcome">Welcome!</div>
+<div id="getstarted">Enter your phone number to get started</div>
+<div id="number">Number: <input type="text" id="numberfield"></input>
+<button id="submit" height:"100" width:"300" onclick="sendNumber()">Create My Character</button>
+</div>
+</div>
+</body>
+</html>
